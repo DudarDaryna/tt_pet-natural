@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import './utils/_normilize.css';
+@import './utils/_variables.css';
+
+@import './page.css';
+@import './header.css';
+@import './order.css';
+@import './about.css';
+@import './results.css';
+
+@import './nav.css';
+@import './card.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 20px;
+    width: 100hh;
+  }
+}

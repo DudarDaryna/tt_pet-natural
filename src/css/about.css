@@ -1,0 +1,16 @@
+.about {
+  background: space url('../images/pattern.png');
+}
+
+.about__cards {
+  justify-content: center;
+  display: flex;
+  gap: 84px;
+}
+
+@media (max-width: 720px) {
+  .about__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
