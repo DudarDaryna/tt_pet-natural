@@ -41,10 +41,6 @@
 }
 
 @media (max-width: 720px) {
-  .results__img {
-    display: none;
-  }
-
   .results__post {
     background: none;
   }
@@ -52,5 +48,15 @@
   .results__text {
     margin: 0;
     width: fit-content;
+  }
+}
+
+@media (max-width: 1280px) {
+  .results__img {
+    display: none;
+  }
+
+  .results__content {
+    justify-content: center;
   }
 }

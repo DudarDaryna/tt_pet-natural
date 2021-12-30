@@ -1,5 +1,6 @@
 .page {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
@@ -13,7 +14,7 @@
   margin-bottom: 60px;
   padding-top: 100px;
 
-  background: linear-gradient(#F9E994, #537D13, #483C08);
+  background: linear-gradient(#f9e994, #537d13, #483c08);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -22,7 +23,7 @@
 }
 
 .page__section-title--results {
-  background: #537D13;
+  background: #537d13;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

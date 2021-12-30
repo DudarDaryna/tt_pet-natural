@@ -14,6 +14,10 @@
   padding: 24px;
 
   font-size: 36px;
+
+  background-color: #7eb2e1;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .order__timer {
@@ -21,15 +25,26 @@
 }
 
 .order__price-box {
-  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 .order__price--old {
+  position: relative;
+
   font-size: 30px;
-  color: #6B6B6B;
+  color: #6b6b6b;
+}
+
+.order__price--old:before {
+	content: "";
+	border-bottom: 3px solid #f6be91;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	transform: rotate(-12deg);
 }
 
 .order__form {
@@ -40,6 +55,7 @@
 }
 
 .order__input {
+  position: relative;
   padding: 16px;
   width: 100%;
 
@@ -79,4 +95,10 @@
 .order__date {
   margin-bottom: 20px;
   font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .order {
+    margin: 0 auto;
+  }
 }

@@ -71,7 +71,11 @@
             </ul>
           </article>
 
-          <img src="./images/main-img.png" alt="Pet natural of Vermont">
+          <img
+            class="header__product-img"
+            src="./images/main-img.png"
+            alt="Pet natural of Vermont"
+          >
 
           <div id="order" class="header__order order">
             <div class="order__info">
@@ -79,7 +83,7 @@
                 TIME LEFT
               </p>
               <div class="order__timer">
-                <p class="hours" id="timer">0</p>
+                <p class="hours" id="timer">2 : 00 : 00</p>
               </div>
               <div class="order__price-box">
                 <p class="order__price order__price--old">
@@ -112,11 +116,17 @@
                   class="order__input masked prefixed"
                   type="tel"
                   name="telephone"
+                  id="phone"
                   placeholder="+38(0__)___-__-__"
                   required
                   data-prefix="+38(0"
                   data-pattern="+**(***)***-**-**"
                 >
+                <script>
+                  $(function(){
+                    $("#phone").mask("+38(099) 999-9999");
+                  });
+                  </script>
               </label>
               <button class="order__btn" type="submit">
                 Order
